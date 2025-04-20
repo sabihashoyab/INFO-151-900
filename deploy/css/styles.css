@@ -516,16 +516,22 @@ textarea {
 ============= */
 #newsletter {
   background-color: var(--lilyWhite);
+  padding: 56px 24px;
 }
 #newsletter p {
   color: var(--grey);
   font-weight: 600;
   line-height: 1.75rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 #newsletter form input {
   border: none;
   color: var(--grey);
   font-weight: 600;
+  padding: 24px 75px;
+  margin-bottom: 20px;
+  border-radius: 6px;
 }
 #newsletter form button {
   border: none;
@@ -533,4 +539,7 @@ textarea {
   color: var(--white);
   font-weight: 600;
   font-size: 0.875rem;
+  margin-left: 175px;
+  padding: 20px 50px;
+  border-radius: 6px;
 }
