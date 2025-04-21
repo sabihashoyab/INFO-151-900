@@ -543,3 +543,80 @@ textarea {
   padding: 20px 50px;
   border-radius: 6px;
 }
+
+/* =============
+    Process
+============= */
+#process {
+  padding: 56px 24px;
+}
+#process #top-content {
+  text-align: center;
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-bottom: 24px;
+}
+#process #process-card-container .process-card {
+  background-color: var(--white);
+  border: 3px solid var(--ghostWhite);
+  margin-bottom: 48px;
+  padding: 16px;
+  border-radius: 14px;
+}
+#process #process-card-container .process-card h2 {
+  color: var(--nightBlue);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#process #process-card-container .process-card p {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-bottom: 24px;
+}
+
+/* =============
+    Communication/Global
+============= */
+#communication {
+  padding: 56px 24px;
+  text-align: center;
+}
+#communication p {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/* =============
+    About
+============= */
+#about {
+  padding: 56px 24px;
+}
+#about #top-content {
+  text-align: center;
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+#about #about-card-container .about-card {
+  background-color: var(--white);
+  margin-bottom: 48px;
+  padding: 16px;
+  border-radius: 14px;
+}
+#about #about-card-container .about-card h2 {
+  color: var(--nightBlue);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#about #about-card-container .about-card p {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-bottom: 10px;
+}

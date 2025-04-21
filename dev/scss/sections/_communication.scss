@@ -1,0 +1,19 @@
+/* =============
+    Communication/Global
+============= */
+@use "../helpers";
+
+#communication{
+    padding: 56px 24px;
+    text-align: center;
+    
+
+    p{
+        color: var(--grey);
+        font-weight: 600;
+        line-height: helpers.rem-calc(28);
+        margin-top: 24px;
+        margin-bottom: 24px;
+
+    }
+}
