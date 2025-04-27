@@ -4,38 +4,61 @@
 @use "../helpers";
 
 #newsletter{
-    background-color: var(--lilyWhite);
-    padding: 56px 24px;
-
-    p{
-        color: var(--grey);
-        font-weight: 600;
-        line-height: helpers.rem-calc(28);
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
-
-    form{
-        input{
-            border: none;
+    padding: 40px 24px;
+    
+    #newsletter-content{
+        background-color: var(--lilyWhite);
+        padding: 60px 16px;
+  
+  
+        p{
             color: var(--grey);
             font-weight: 600;
-            padding: 24px 75px;
-            margin-bottom: 20px;
-            border-radius: 6px;
-            
+            line-height: helpers.rem-calc(28);
+            margin: 16px 0;
         }
+        
+        form{
+            
+            input{
+                border: none;
+                color: var(--grey);
+                font-weight: 600;
+                width: 100%;
+                padding: 24px 8px;
+                box-sizing: border-box;
+                border-radius: 8px;
+                margin-bottom: 16px;
+            }
+            
+            ::placeholder{
+                color: var(--grey);
+                // color: var(--white);
+                opacity: 1; /* Firefox */
+            }
+            
+            ::-ms-input-placeholder{ /* Edge 12-18 */
+            color: var(--grey);
+            }
 
-        button{
-            border: none;
-            background-color: var(--nightBlue);
-            color: var(--white);
-            font-weight: 600;
-            font-size: helpers.rem-calc(14);
-            margin-left: 175px;
-            padding: 20px 50px;
-            border-radius: 6px;
+            div{
+                text-align: right;
+            }
 
+
+        }
+        
+            // button{
+            //     border: none;
+            //     background-color: var(--nightBlue);
+            //     color: var(--white);
+            //     font-size: helpers.rem-calc(14);
+            //     font-weight: 600;
+            // }
+
+        aside{
+            //week 4 code
+            display: none;
         }
     }
 }
