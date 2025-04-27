@@ -1,0 +1,31 @@
+/* =============
+    mq-demp
+============= */
+@use "../helpers";
+
+#mq-demo{
+    height:100vh;
+    background-color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        height: 200px;
+        width: 220px;
+        background-color: var(--aqua);
+
+        @include helpers.md{
+            height: 250px;
+            width: 250px;
+
+            background-color: orangered;
+        }
+
+        @include helpers.lg{
+            width: 400px;
+            background-color: purple;
+        }
+    }
+}
