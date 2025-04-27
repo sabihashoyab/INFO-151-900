@@ -14,14 +14,11 @@
          
 
             p{
-                color: var(--grey);
-                font-weight: 600;
-                line-height: helpers.rem-calc(28);
                 margin-top: 24px;
                 margin-bottom: 24px;
             }
 
-            a:link, a:visited{
+            //a:link, a:visited{
             //     background-color: var(--nightBlue);
             //     color: var(--white);
             //     font-size: helpers.rem-calc(14);
@@ -34,7 +31,7 @@
             // }
             // a:hover, a:focus{
                 
-            }
+            // }
 
             button{
                 background-color: var(--white);
@@ -67,7 +64,7 @@
         }
     }
 
-    aside{
+    // aside{
 
-    }
+    // }
 }
