@@ -6,64 +6,47 @@
 #about{
     padding: 40px 24px;
 
-    @include helpers.xl{
-        padding: 100px 24px;
+    @include helpers.lg{
+        display: grid;
+        grid-template-columns: 50% auto;
     }
 
-    #about-content-container{
-        @include helpers.md{
-            display: grid;
-            grid-template-areas: "about-img"
-                                "about-content";
-            //grid-template-columns: 50% auto;
-        }
 
+    @include helpers.xl{
+        width: 1200px;
+        margin: 0 auto;
+    }
         
-    
-        @include helpers.xl{
-            grid-template-columns: 40% auto;
-            grid-template-areas: "about-content about-img";
-    
-            max-width: 1200px;
-            margin: 0 auto;
+    section{
+        .about-p{
+            margin: 24px 0 40px;
         }
-        section{
+    
+        ul{
             @include helpers.md{
-                grid-area: about-content;
-                padding: 0 15vw;
-
+                display: grid;
+                grid-template-columns: 50% auto;
+                gap: 16px;
             }
 
             @include helpers.lg{
-                padding: 0 25vw;
+                grid-template-columns: 1fr;
             }
-
-            @include helpers.xl{
-                padding: 0;
-            }
-
-            .about-p{
-                margin: 24px 0 40px;
-            }
-        
-            ul{
-                li{
-                    h2{
-                        color: var(--nightBlue);
-                        font-size: helpers.rem-calc(20);
-                        font-weight: 600;
-                        margin-bottom: 8px;
-                    }
+    
+            li{
+                h2{
+                    color: var(--nightBlue);
+                    font-size: helpers.rem-calc(20);
+                    font-weight: 600;
+                    margin-bottom: 8px;
                 }
             }
-    
         }
-    
-        aside{
-            grid-area: about-img;
-            margin-top: 68px;
-        }
-    }
-    
 
+    }
+
+    aside{
+        margin-top: 68px;
+    }
 }
+    
