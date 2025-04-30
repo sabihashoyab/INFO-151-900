@@ -6,23 +6,28 @@
 #communication{
 
     text-align: center;
-    margin: 0 auto;
-    padding: 60px 20px;
-    max-width: 1200px;
+    
+    #comms-content{
+        @include helpers.lg{
+            width: 992px;
+            margin: 0 auto;
+        }
 
-    @include helpers.md {
-        padding: 60px 40px;
+        p {
+            margin: 24px 0px 48px;
+            
+            @include helpers.md {
+                padding: 0 8vw;
+                margin-bottom: 24px;
+            }
+        }
     }
 
-    @include helpers.lg {
-        padding: 80px 60px;
+    #comms-image{
+        @include helpers.xl{
+            width: 1200px;
+            margin: 0 auto;
+        }
     }
-
-    @include helpers.xl {
-        padding: 100px 80px;
-    }
-
-    p {
-        margin: 24px 0px 48px;
-    }
+   
 }

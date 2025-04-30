@@ -904,27 +904,27 @@ textarea {
 ============= */
 #communication {
   text-align: center;
-  margin: 0 auto;
-  padding: 60px 20px;
-  max-width: 1200px;
-}
-@media (min-width: 768px) {
-  #communication {
-    padding: 60px 40px;
-  }
 }
 @media (min-width: 992px) {
-  #communication {
-    padding: 80px 60px;
+  #communication #comms-content {
+    width: 992px;
+    margin: 0 auto;
+  }
+}
+#communication #comms-content p {
+  margin: 24px 0px 48px;
+}
+@media (min-width: 768px) {
+  #communication #comms-content p {
+    padding: 0 8vw;
+    margin-bottom: 24px;
   }
 }
 @media (min-width: 1200px) {
-  #communication {
-    padding: 100px 80px;
+  #communication #comms-image {
+    width: 1200px;
+    margin: 0 auto;
   }
-}
-#communication p {
-  margin: 24px 0px 48px;
 }
 
 /* =============
