@@ -67,6 +67,14 @@
             padding: 16px;
             border-radius: 14px;
 
+            .package-card-img{
+                width: 100%;
+                height: 273px;
+                background-position: center;
+                background-size: cover;
+                border-radius: 14px;
+            }
+
 
             p{
                 color: var(--nightBlue);
@@ -74,6 +82,16 @@
                 font-size: helpers.rem-calc(20);
                 line-height: helpers.rem-calc(28);
                 margin: 20px 16px;
+            }
+
+            .user-icons{
+                li{
+                    height: 36px;
+                    width: 36px;
+                    border-radius: 100%;
+                    border: 1px solid var(--white);
+
+                }
             }
             h4{
                 color: var(--grey);
@@ -94,17 +112,67 @@
             @include helpers.md{
                 grid-area: card-1;
             }
+
+            .package-card-img{
+                background: url("../img/packages/card1.jpg");
+            }
+
+            .icon-1{
+                background-image: url("../img/packages/user1.jpg");
+            }
+            .icon-3{
+                background-image: url("../img/packages/user3.jpg");
+                background-position: 80% 80%;
+            }
+            .icon-2{  
+                background-image: url("../img/packages/user2.jpg");
+            }
+            
         }
 
         #card-2{
             @include helpers.md{
                 grid-area: card-2;
             }
+
+            .package-card-img{
+                background: url("../img/packages/card3.jpg");
+            }
+
+            .icon-5{
+                background-image: url("../img/packages/user5.jpg");
+                background-position: 50% 40%;
+            }
+            .icon-3{
+                background-image: url("../img/packages/user3.jpg");
+                background-position: 80% 80%;
+            }
+            .icon-4{
+                background-image: url("../img/packages/user4.jpg");
+                background-position: 20% 20%;
+            }
         }
 
         #card-3{
             @include helpers.md{
                 grid-area: card-3;
+            }
+
+            .package-card-img{
+                background: url("../img/packages/card2.jpg");
+            }
+
+            .icon-5{
+                background-image: url("../img/packages/user5.jpg");
+                background-position: 50% 40%;
+            }
+            .icon-3{
+                background-image: url("../img/packages/user3.jpg");
+                background-position: 80% 80%;
+            }
+            .icon-4{
+                background-image: url("../img/packages/user4.jpg");
+                background-position: 20% 20%;
             }
         }
     }

@@ -594,12 +594,25 @@ textarea {
   padding: 16px;
   border-radius: 14px;
 }
+#packages #package-card-container .package-card .package-card-img {
+  width: 100%;
+  height: 273px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 14px;
+}
 #packages #package-card-container .package-card p {
   color: var(--nightBlue);
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin: 20px 16px;
+}
+#packages #package-card-container .package-card .user-icons li {
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  border: 1px solid var(--white);
 }
 #packages #package-card-container .package-card h4 {
   color: var(--grey);
@@ -618,15 +631,58 @@ textarea {
     grid-area: card-1;
   }
 }
+#packages #package-card-container #card-1 .package-card-img {
+  background: url("../img/packages/card1.jpg");
+}
+#packages #package-card-container #card-1 .icon-1 {
+  background-image: url("../img/packages/user1.jpg");
+}
+#packages #package-card-container #card-1 .icon-3 {
+  background-image: url("../img/packages/user3.jpg");
+  background-position: 80% 80%;
+}
+#packages #package-card-container #card-1 .icon-2 {
+  background-image: url("../img/packages/user2.jpg");
+}
 @media (min-width: 768px) {
   #packages #package-card-container #card-2 {
     grid-area: card-2;
   }
 }
+#packages #package-card-container #card-2 .package-card-img {
+  background: url("../img/packages/card3.jpg");
+}
+#packages #package-card-container #card-2 .icon-5 {
+  background-image: url("../img/packages/user5.jpg");
+  background-position: 50% 40%;
+}
+#packages #package-card-container #card-2 .icon-3 {
+  background-image: url("../img/packages/user3.jpg");
+  background-position: 80% 80%;
+}
+#packages #package-card-container #card-2 .icon-4 {
+  background-image: url("../img/packages/user4.jpg");
+  background-position: 20% 20%;
+}
 @media (min-width: 768px) {
   #packages #package-card-container #card-3 {
     grid-area: card-3;
   }
+}
+#packages #package-card-container #card-3 .package-card-img {
+  background: url("../img/packages/card2.jpg");
+}
+#packages #package-card-container #card-3 .icon-5 {
+  background-image: url("../img/packages/user5.jpg");
+  background-position: 50% 40%;
+}
+#packages #package-card-container #card-3 .icon-3 {
+  background-image: url("../img/packages/user3.jpg");
+  background-position: 80% 80%;
+}
+#packages #package-card-container #card-3 .icon-4 {
+  background-image: url("../img/packages/user4.jpg");
+  background-position: 20% 20%;
 }
 
 /* =============
