@@ -566,12 +566,38 @@ textarea {
 #packages #top-content {
   text-align: center;
 }
+@media (min-width: 768px) {
+  #packages #top-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  #packages #top-content {
+    margin-bottom: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  #packages #top-content {
+    width: 1200px;
+    margin: 0 auto 70px;
+  }
+}
 #packages #top-content #package-button-container {
   background-color: var(--white);
   margin: 24px 0;
   display: inline-block;
   padding: 8px;
   border-radius: 10px;
+}
+@media (min-width: 768px) {
+  #packages #top-content #package-button-container {
+    margin-left: auto;
+  }
 }
 #packages #top-content #package-button-container button {
   border: none;
@@ -627,23 +653,42 @@ textarea {
   line-height: 1.75rem;
   margin: 20px 16px;
 }
-#packages #package-card-container .package-card .user-icons li {
+#packages #package-card-container .package-card .package-status-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#packages #package-card-container .package-card .package-status-bar .user-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#packages #package-card-container .package-card .package-status-bar .user-icons li {
   height: 36px;
   width: 36px;
   border-radius: 100%;
   border: 1px solid var(--white);
+  margin-right: -15px;
 }
-#packages #package-card-container .package-card h4 {
+#packages #package-card-container .package-card .package-status-bar h4 {
   color: var(--grey);
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.75rem;
+  margin-left: 20px;
 }
-#packages #package-card-container .package-card h3 {
+#packages #package-card-container .package-card .package-status-bar h3 {
   color: var(--aqua);
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.75rem;
+  margin-left: auto;
 }
 @media (min-width: 768px) {
   #packages #package-card-container #card-1 {
@@ -671,7 +716,7 @@ textarea {
 #packages #package-card-container #card-2 .package-card-img {
   background: url("../img/packages/card3.jpg");
 }
-#packages #package-card-container #card-2 .icon-5 {
+#packages #package-card-container #card-2 .icon-1 {
   background-image: url("../img/packages/user5.jpg");
   background-position: 50% 40%;
 }
@@ -679,7 +724,7 @@ textarea {
   background-image: url("../img/packages/user3.jpg");
   background-position: 80% 80%;
 }
-#packages #package-card-container #card-2 .icon-4 {
+#packages #package-card-container #card-2 .icon-2 {
   background-image: url("../img/packages/user4.jpg");
   background-position: 20% 20%;
 }
@@ -691,7 +736,7 @@ textarea {
 #packages #package-card-container #card-3 .package-card-img {
   background: url("../img/packages/card2.jpg");
 }
-#packages #package-card-container #card-3 .icon-5 {
+#packages #package-card-container #card-3 .icon-1 {
   background-image: url("../img/packages/user5.jpg");
   background-position: 50% 40%;
 }
@@ -699,7 +744,7 @@ textarea {
   background-image: url("../img/packages/user3.jpg");
   background-position: 80% 80%;
 }
-#packages #package-card-container #card-3 .icon-4 {
+#packages #package-card-container #card-3 .icon-2 {
   background-image: url("../img/packages/user4.jpg");
   background-position: 20% 20%;
 }
