@@ -5,6 +5,7 @@
 
 #about{
     padding: 40px 24px;
+    
 
     @include helpers.lg{
         display: grid;
@@ -23,6 +24,7 @@
         }
     
         ul{
+            
             @include helpers.md{
                 display: grid;
                 grid-template-columns: 50% auto;
@@ -34,12 +36,35 @@
             }
     
             li{
+            
+                display: flex;
+                align-items: center;
+                margin-bottom: 32px;
+
+                img{
+                    margin-right: 16px;
+                }
+
+                div{
+                    
+                }
+            
+
                 h2{
                     color: var(--nightBlue);
                     font-size: helpers.rem-calc(20);
                     font-weight: 600;
                     margin-bottom: 8px;
                 }
+
+                p{
+                    color: var(--grey);
+                    font-size: helpers.rem-calc(14);
+                    margin:0;
+                }
+
+                
+
             }
         }
 

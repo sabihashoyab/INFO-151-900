@@ -1103,11 +1103,28 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+#about section ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+#about section ul li img {
+  margin-right: 16px;
+}
 #about section ul li h2 {
   color: var(--nightBlue);
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 8px;
+}
+#about section ul li p {
+  color: var(--grey);
+  font-size: 0.875rem;
+  margin: 0;
 }
 #about aside {
   margin-top: 68px;
