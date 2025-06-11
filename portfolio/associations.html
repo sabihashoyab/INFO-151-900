@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe6f2">
+  <title>Associations | Your Name</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="associations.html">Associations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Burger menu for mobile -->
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container"> 
+    <main>
+      <h2 data-aos="fade-up">Professional Associations</h2>
+
+      <div class="org" data-aos="fade-right">
+        <img src="images/MSA.jpg" alt="MSA logo" width="100">
+        <p><strong>Muslim Student Association:</strong> The world’s largest computing society supporting research and education in computer science.</p>
+        <a href="https://drexel.campuslabs.com/engage/organization/drexel-muslim-students-association" target="_blank">Visit DMSA</a>
+      </div>
+
+      <div class="org" data-aos="fade-left">
+        <img src="images/WICS.png" alt="WICS logo" width="100">
+        <p><strong>Women in Computing Society:</strong> A global association for professionals in electronic and electrical engineering.</p>
+        <a href="https://drexelwics.hosting.acm.org/" target="_blank">Visit WiCS</a>
+      </div>
+
+      <div class="org" data-aos="fade-right">
+        <img src="images/SoAI.png" alt="SoAI logo" width="100">
+        <p><strong>Society of Artificial Intelligence:</strong> Provides education and certification in IT governance, security, and auditing.</p>
+        <a href="https://drexelai.com/g" target="_blank">Visit SoAI</a>
+      </div>
+
+      <div class="org" data-aos="fade-left">
+        <img src="images/cyberdragons.jpg" alt="CyberDragons logo" width="100">
+        <p><strong>CyberDragons:</strong> A nonprofit that connects and supports women in cybersecurity.</p>
+        <a href="https://drexel.campuslabs.com/engage/organization/cyberdragons" target="_blank">Visit CDs</a>
+      </div>
+    </main>
+  </div>
+
+  <!-- JavaScript (AOS + burger menu) -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      offset: 50
+    });
+  </script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

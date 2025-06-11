@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Your Name</title>
+  <title>Home | Sabiha Shoyab</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 </head>
 <body>
 
-  <nav>
+  <!-- NAVIGATION BAR -->
+  <nav> 
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -19,6 +19,8 @@
       <li><a href="associations.html">Associations</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <!-- Burger menu for mobile -->
     <div class="burger">
       <div></div>
       <div></div>
@@ -26,23 +28,27 @@
     </div>
   </nav>
 
-  <div class="container"> 
+  
+  <!-- MAIN CONTENT -->
+  <div class="container">  
     <main>
-      <h2 data-aos="fade-up">Projects</h2>
+      <section data-aos="fade-in">
+        <h1>Welcome to My Portfolio</h1>
+        <p>"Learning never exhausts the mind." – Leonardo da Vinci</p>
+      </section>
 
-      <h3 data-aos="fade-right">Coursework</h3>
-      <ul>
-        <li>INFO 102 – Web Development: <a href="project-files/info102-final.html">Final Website</a></li>
-      </ul>
+      <section data-aos="fade-up">
+        <h2>My Philosophy</h2>
+        <p>I believe in using technology to solve real-world problems ethically and inclusively.</p>
+      </section>
 
-      <h3 data-aos="fade-right">Personal Projects</h3>
-      <a href="images/project1.jpg" data-fancybox="gallery" data-aos="zoom-in">
-        <img src="images/project1.jpg" alt="Project Screenshot" width="200">
-      </a>
+      <section data-aos="fade-in">
+        <img src="images/info151headshot.png" alt="My headshot" class="profile-pic">
+      </section>
     </main>
   </div>
+  <!-- JavaScript for AOS + Burger -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script src="js/script.js"></script>
 
 </body>
